@@ -1,0 +1,70 @@
+:root {
+  --row: 6;
+  --col: 5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.reset-button {
+  border: none;
+  padding: 1rem;
+  width: 100px;
+  color: #fff;
+  background-color: #74787b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  opacity: 0.8;
+}
+
+.wordle-container {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.cell-container {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  height: 400px;
+  border: 1px solid black;
+  width: 400px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(var(--col), 1fr);
+  grid-template-rows: repeat(var(--row), 1fr);
+}
+
+.cell {
+  font-weight: bolder;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  display: grid;
+  place-content: center;
+}
+
+.grey {
+  background-color: #74787b;
+}
+
+.green {
+  background-color: #67a362;
+}
+
+.yellow {
+  background-color: #c3ae54;
+}
